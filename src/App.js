@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
 import "./App.css"
-import {Todo} from './Components/Todo'
+import {Form} from './Components/Form'
 import { Todolist } from './Components/Todolist'
-import { Todofunction } from './Components/Todofunction'
 
 export default function App() {
   const [textInput, setTextInput] = useState('')
@@ -12,9 +11,10 @@ export default function App() {
       <header>
         Todo list
       </header>
-      <Todo  todos={todos} setTodos={setTodos} setTextInput={setTextInput} textInput={textInput}/>
-      <Todolist todos={todos}/>
-      <Todofunction />
+        <Form  todos={todos} setTodos={setTodos} setTextInput={setTextInput} textInput={textInput}/>
+        <Todolist todos={todos} setTodos={setTodos}/>
+        
+      
 
     </div>
   )
