@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Todo = ({text,todo,todos, setTodos}) => {
+  // console.log(todo,"rtuiriy")
 
   const deleteHandler=()=>{
     setTodos(todos.filter((item)=>item.id !== todo.id))

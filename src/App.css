@@ -16,7 +16,7 @@ body {
   color:var(--text-color);
   font-family: "Poppins", sans-serif;
 }
-header {
+.todo-title{
   font-size: 4rem;
 }
 

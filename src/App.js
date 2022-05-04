@@ -8,7 +8,7 @@ export default function App() {
   const [todos, setTodos] = useState([])
   return (
     <div className='App'>
-      <header>
+      <header className="todo-title">
         Todo list
       </header>
         <Form  todos={todos} setTodos={setTodos} setTextInput={setTextInput} textInput={textInput}/>
